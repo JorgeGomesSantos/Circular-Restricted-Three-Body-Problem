@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DDE89B71-2B46-3329-A13D-417B6A0ADFE8}</ProjectGuid>
+    <RootNamespace>level</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <MinimumVisualStudioVersion>15.00</MinimumVisualStudioVersion>
+    <DefaultLanguage>en</DefaultLanguage>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17134.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>level</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>level</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">level</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+    <GenerateManifest Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</GenerateManifest>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">level</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+    <GenerateManifest Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qwt-6.1.3\include;C:\Qwt-6.1.3\include;C:\QT\5.9.3\WINRT_X86_MSVC2017\include;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtPrintSupport;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtSvg;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtWidgets;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtGui;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtANGLE;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtCore;release;.;C:\QT\5.9.3\WINRT_X86_MSVC2017\mkspecs\winrt-x86-msvc2017;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;Q_BYTE_ORDER=Q_LITTLE_ENDIAN;WINAPI_FAMILY=WINAPI_FAMILY_PC_APP;WINAPI_PARTITION_PHONE_APP=1;X86;__X86__;__x86__;QT_DEPRECATED_WARNINGS;QWT_DLL;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\qtmain.lib;ucrt.lib;vcruntime.lib;windowscodecs.lib;WindowsApp.lib;runtimeobject.lib;OneCore.lib;C:\Qwt-6.1.3\lib\qwt.dll;qwt.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5PrintSupport.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Svg.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Widgets.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Gui.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Core.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\libEGL.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\libGLESv2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\QT\5.9.3\WINRT_X86_MSVC2017\lib;$(QTDIR)\lib;C:\Qwt-6.1.3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/APPCONTAINER %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateManifest>false</GenerateManifest>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;kernel32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\level.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;Q_BYTE_ORDER=Q_LITTLE_ENDIAN;WINAPI_FAMILY=WINAPI_FAMILY_PC_APP;WINAPI_PARTITION_PHONE_APP=1;X86;__X86__;__x86__;QT_DEPRECATED_WARNINGS;QWT_DLL;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Target Name="WinDeployQt_Release|Win32" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Inputs="$(OutDir)\$(TargetName).exe" Outputs="$(TargetName).windeployqt.$(Platform).$(Configuration)">
+    <Message Text="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\windeployqt.exe -qmldir C:\Users\jrape\Documents\projetosQT\level -list relative -dir &quot;$(MSBuildProjectDirectory)&quot; &quot;$(OutDir)\$(TargetName).exe&quot; > &quot;$(TargetName).windeployqt.$(Platform).$(Configuration)&quot;" />
+    <Exec Command="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\windeployqt.exe -qmldir C:\Users\jrape\Documents\projetosQT\level -list relative -dir &quot;$(MSBuildProjectDirectory)&quot; &quot;$(OutDir)\$(TargetName).exe&quot; > &quot;$(TargetName).windeployqt.$(Platform).$(Configuration)&quot;" />
+  </Target>
+  <Target Name="PopulateWinDeployQtItems_Release|Win32" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" AfterTargets="Link" DependsOnTargets="WinDeployQt_Release|Win32">
+    <ReadLinesFromFile File="$(TargetName).windeployqt.$(Platform).$(Configuration)">
+      <Output TaskParameter="Lines" ItemName="DeploymentItems" />
+    </ReadLinesFromFile>
+    <ItemGroup>
+      <None Include="@(DeploymentItems)">
+        <DeploymentContent>true</DeploymentContent>
+      </None>
+    </ItemGroup>
+  </Target>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qwt-6.1.3\include;C:\Qwt-6.1.3\include;C:\QT\5.9.3\WINRT_X86_MSVC2017\include;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtPrintSupport;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtSvg;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtWidgets;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtGui;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtANGLE;C:\QT\5.9.3\WINRT_X86_MSVC2017\include\QtCore;debug;.;C:\QT\5.9.3\WINRT_X86_MSVC2017\mkspecs\winrt-x86-msvc2017;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;Q_BYTE_ORDER=Q_LITTLE_ENDIAN;WINAPI_FAMILY=WINAPI_FAMILY_PC_APP;WINAPI_PARTITION_PHONE_APP=1;X86;__X86__;__x86__;QT_DEPRECATED_WARNINGS;QWT_DLL;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\qtmaind.lib;ucrtd.lib;vcruntimed.lib;windowscodecs.lib;WindowsApp.lib;runtimeobject.lib;OneCore.lib;C:\Qwt-6.1.3\lib\qwt.dll;qwtd.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5PrintSupportd.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Svgd.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Widgetsd.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Guid.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\Qt5Cored.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\libEGLd.lib;C:\QT\5.9.3\WINRT_X86_MSVC2017\lib\libGLESv2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\QT\5.9.3\WINRT_X86_MSVC2017\lib;$(QTDIR)\lib;C:\Qwt-6.1.3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/APPCONTAINER %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateManifest>false</GenerateManifest>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;kernel32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)\level.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;Q_BYTE_ORDER=Q_LITTLE_ENDIAN;WINAPI_FAMILY=WINAPI_FAMILY_PC_APP;WINAPI_PARTITION_PHONE_APP=1;X86;__X86__;__x86__;QT_DEPRECATED_WARNINGS;QWT_DLL;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Target Name="WinDeployQt_Debug|Win32" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Inputs="$(OutDir)\$(TargetName).exe" Outputs="$(TargetName).windeployqt.$(Platform).$(Configuration)">
+    <Message Text="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\windeployqt.exe -qmldir C:\Users\jrape\Documents\projetosQT\level -list relative -dir &quot;$(MSBuildProjectDirectory)&quot; &quot;$(OutDir)\$(TargetName).exe&quot; > &quot;$(TargetName).windeployqt.$(Platform).$(Configuration)&quot;" />
+    <Exec Command="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\windeployqt.exe -qmldir C:\Users\jrape\Documents\projetosQT\level -list relative -dir &quot;$(MSBuildProjectDirectory)&quot; &quot;$(OutDir)\$(TargetName).exe&quot; > &quot;$(TargetName).windeployqt.$(Platform).$(Configuration)&quot;" />
+  </Target>
+  <Target Name="PopulateWinDeployQtItems_Debug|Win32" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" AfterTargets="Link" DependsOnTargets="WinDeployQt_Debug|Win32">
+    <ReadLinesFromFile File="$(TargetName).windeployqt.$(Platform).$(Configuration)">
+      <Output TaskParameter="Lines" ItemName="DeploymentItems" />
+    </ReadLinesFromFile>
+    <ItemGroup>
+      <None Include="@(DeploymentItems)">
+        <DeploymentContent>true</DeploymentContent>
+      </None>
+    </ItemGroup>
+  </Target>
+  <ItemGroup>
+    <ClCompile Include="help.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="plotclass.cpp" />
+    <ClCompile Include="print.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="help.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">help.h;release\moc_predefs.h;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQ_BYTE_ORDER=Q_LITTLE_ENDIAN -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -DWINAPI_PARTITION_PHONE_APP=1 -DX86 -D__X86__ -D__x86__ -DQT_DEPRECATED_WARNINGS -DQWT_DLL -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/QT/5.9.3/WINRT_X86_MSVC2017/mkspecs/winrt-x86-msvc2017 -IC:/Users/jrape/Documents/projetosQT/level -IC:/Qwt-6.1.3/include -IC:/Qwt-6.1.3/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtPrintSupport -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtSvg -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtWidgets -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtGui -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtANGLE -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt&quot; help.h -o release\moc_help.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC help.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_help.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">help.h;debug\moc_predefs.h;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQ_BYTE_ORDER=Q_LITTLE_ENDIAN -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -DWINAPI_PARTITION_PHONE_APP=1 -DX86 -D__X86__ -D__x86__ -DQT_DEPRECATED_WARNINGS -DQWT_DLL -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/QT/5.9.3/WINRT_X86_MSVC2017/mkspecs/winrt-x86-msvc2017 -IC:/Users/jrape/Documents/projetosQT/level -IC:/Qwt-6.1.3/include -IC:/Qwt-6.1.3/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtPrintSupport -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtSvg -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtWidgets -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtGui -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtANGLE -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt&quot; help.h -o debug\moc_help.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC help.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_help.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow.h;release\moc_predefs.h;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQ_BYTE_ORDER=Q_LITTLE_ENDIAN -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -DWINAPI_PARTITION_PHONE_APP=1 -DX86 -D__X86__ -D__x86__ -DQT_DEPRECATED_WARNINGS -DQWT_DLL -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/QT/5.9.3/WINRT_X86_MSVC2017/mkspecs/winrt-x86-msvc2017 -IC:/Users/jrape/Documents/projetosQT/level -IC:/Qwt-6.1.3/include -IC:/Qwt-6.1.3/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtPrintSupport -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtSvg -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtWidgets -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtGui -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtANGLE -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt&quot; mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow.h;debug\moc_predefs.h;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQ_BYTE_ORDER=Q_LITTLE_ENDIAN -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -DWINAPI_PARTITION_PHONE_APP=1 -DX86 -D__X86__ -D__x86__ -DQT_DEPRECATED_WARNINGS -DQWT_DLL -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/QT/5.9.3/WINRT_X86_MSVC2017/mkspecs/winrt-x86-msvc2017 -IC:/Users/jrape/Documents/projetosQT/level -IC:/Qwt-6.1.3/include -IC:/Qwt-6.1.3/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtPrintSupport -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtSvg -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtWidgets -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtGui -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtANGLE -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt&quot; mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="plotclass.h" />
+    <CustomBuild Include="print.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">print.h;release\moc_predefs.h;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQ_BYTE_ORDER=Q_LITTLE_ENDIAN -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -DWINAPI_PARTITION_PHONE_APP=1 -DX86 -D__X86__ -D__x86__ -DQT_DEPRECATED_WARNINGS -DQWT_DLL -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/QT/5.9.3/WINRT_X86_MSVC2017/mkspecs/winrt-x86-msvc2017 -IC:/Users/jrape/Documents/projetosQT/level -IC:/Qwt-6.1.3/include -IC:/Qwt-6.1.3/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtPrintSupport -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtSvg -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtWidgets -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtGui -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtANGLE -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt&quot; print.h -o release\moc_print.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC print.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_print.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">print.h;debug\moc_predefs.h;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQ_BYTE_ORDER=Q_LITTLE_ENDIAN -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -DWINAPI_PARTITION_PHONE_APP=1 -DX86 -D__X86__ -D__x86__ -DQT_DEPRECATED_WARNINGS -DQWT_DLL -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/QT/5.9.3/WINRT_X86_MSVC2017/mkspecs/winrt-x86-msvc2017 -IC:/Users/jrape/Documents/projetosQT/level -IC:/Qwt-6.1.3/include -IC:/Qwt-6.1.3/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtPrintSupport -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtSvg -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtWidgets -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtGui -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtANGLE -IC:/QT/5.9.3/WINRT_X86_MSVC2017/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt&quot; print.h -o debug\moc_print.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC print.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_print.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_help.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_help.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -FS -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zi -MDd -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\QT\5.9.3\WINRT_X86_MSVC2017\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -FS -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\QT\5.9.3\WINRT_X86_MSVC2017\mkspecs\features\data\dummy.cpp 2>NUL >release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_print.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_print.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_icon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_icon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_help.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_print.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="help.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">help.ui;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe help.ui -o ui_help.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC help.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_help.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">help.ui;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe help.ui -o ui_help.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC help.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_help.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow.ui;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow.ui;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="print.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">print.ui;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe print.ui -o ui_print.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC print.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_print.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">print.ui;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\uic.exe print.ui -o ui_print.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC print.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_print.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="icon.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">icon.qrc;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\rcc.exe -name icon icon.qrc -o release\qrc_icon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">RCC icon.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\qrc_icon.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">icon.qrc;C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\rcc.exe -name icon icon.qrc -o debug\qrc_icon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">RCC icon.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\qrc_icon.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Core.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Cored.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Gui.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Guid.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5PrintSupport.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5PrintSupportd.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Svg.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Svgd.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Widgets.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\Qt5Widgetsd.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\libEGL.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\libEGLd.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\libGLESv2.dll" />
+    <None Include="C:\QT\5.9.3\WINRT_X86_MSVC2017\bin\libGLESv2d.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+    <Image Include="assets/logo_150x150.png" />
+    <Image Include="assets/logo_44x44.png" />
+    <Image Include="assets/logo_store.png" />
+    <Image Include="assets/logo_620x300.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

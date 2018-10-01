@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/if_54_Settings_106187.png</file>
+        <file>images/if_folder-open_1608888.png</file>
+        <file>images/if_ic_open_in_browser_48px_352572.png</file>
+        <file>images/if_new10_216291.png</file>
+        <file>images/if_rocket_406798.png</file>
+        <file>images/if_rocket_2639900.png</file>
+        <file>images/if_save_326688.png</file>
+        <file>images/if_save_2639912.png</file>
+        <file>images/if_164_QuestionMark_183285.png</file>
+        <file>images/if_ic_local_print_shop_48px_352513.png</file>
+        <file>images/if_magnifying-glass_226571.png</file>
+    </qresource>
+</RCC>

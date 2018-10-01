@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Print</class>
+ <widget class="QDialog" name="Print">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Save</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/images/if_save_2639912.png</normaloff>:/images/if_save_2639912.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Print Options</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="backgroundCheck">
+        <property name="text">
+         <string>No Background</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="pdfTextCheck">
+        <property name="text">
+         <string>Include text file on document (only works with PDF)</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="sizeLabel">
+        <property name="text">
+         <string>Width/Height (in mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sizeEdit">
+        <property name="text">
+         <string>200</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="resolutionLabel">
+        <property name="text">
+         <string>Resolution(in dpi)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resolutionEdit">
+        <property name="text">
+         <string>85</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="directoryButton">
+        <property name="text">
+         <string>Select Directory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="directoryEdit">
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="directoryBox">
+        <item>
+         <property name="text">
+          <string>Unknown</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.pdf</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.ps</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.svg</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.bmp</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.cur</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.icns</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.ico</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.jpeg</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.jpg</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.pbm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.pgm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.png</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.ppm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.xbm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>.xpm</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Print</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Print</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
